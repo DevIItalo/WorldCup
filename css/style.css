@@ -1,0 +1,87 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Odd-Modern';
+    src:url('Odd-Modern.ttf.woff') format('woff'),
+        url('Odd-Modern.ttf.svg#Odd-Modern') format('svg'),
+        url('Odd-Modern.ttf.eot'),
+        url('Odd-Modern.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --cor0: #FFF000;
+  --cor1: #fff880;
+  --cor2: #0000FF;
+  --cor3: #8080ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.nav, .nav a {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    height: 25px;
+}
+
+.nav ul,a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+.nav ul li a{
+    padding: 8px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.nav ul li a:hover {
+    background-color: var(--cor3);
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--cor3);
+
+}
+
+
+@media(max-width: 450px) {
+    .cabecalho {
+        margin-top: 10px;
+        display: flex;
+    }
+    
+    .cabecalho h1 {
+        font-size: 3em;
+    }
+}
+
+.cabecalho img {
+    min-height: 50%;
+    min-width: 50%;
+}

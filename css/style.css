@@ -35,6 +35,10 @@ body {
     height: 80px;
 }
 
+.header h2 {
+    font-size: 2em;
+}
+
 .nav, .nav a {
     background-color: var(--cor0);
     color: var(--cor2);
@@ -53,6 +57,7 @@ body {
 }
 
 .nav ul li a{
+    font-size: 1.2em;
     padding: 8px;
     border-radius: 50px;
     transition: .5s;
@@ -63,19 +68,10 @@ body {
     color: white;
     text-decoration: underline;
 }
-
 main {
     background-color: var(--cor3);
-    min-width: 450;
-    max-width: 1024px;
-    padding: 30px;
-    margin: auto;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-
 }
+
 .cabecalho img {
     min-height: 50%;
     min-width: 50%;
@@ -85,26 +81,73 @@ main {
     display: flex;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 section.noticia {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.top div.imagem {
-    background-color: rgb(94, 88, 88);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.363);
+section div.imagem {
+    background-color: black;
+    height: 380px;
+    width: 990px;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.685);
+   
+}
+
+section div#img-1 {
+    background-image: url(/img/uruguai-primeira-copa.jpg);
+    background-size: cover;
     background-attachment: fixed;
 }
 
-.top div#img-0 {
-    background-image: url(/img/uruguai-primeira-copa.jpg);
-    background-position: right center;
+section div#img-2 { 
+    background-image: url(/img/Eurico-Gaspar-Dutra.jpg.png);
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-@media (min-width: 280px) and (max-width: 1024px){
+section div#img-3 {
+    background-image: url(/img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section div#img-4 {
+    background-image: url(/img/4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section div#img-5 {
+    background-image: url(/img/cafu001.113701.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.top h2{
+    font-size: 2em;
+    padding: 10px;
+}
+
+section.top p {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+@media (min-width: 280px) and (max-width: 800px){
     .header {
         background-color: var(--cor0);
         color: var(--cor2);

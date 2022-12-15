@@ -1,20 +1,10 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'Odd-Modern';
-    src:url('Odd-Modern.ttf.woff') format('woff'),
-        url('Odd-Modern.ttf.svg#Odd-Modern') format('svg'),
-        url('Odd-Modern.ttf.eot'),
-        url('Odd-Modern.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
-  --cor0: #FFF000;
-  --cor1: #fff880;
-  --cor2: #0000FF;
-  --cor3: #8080ff;
+    --cor0: #FFF000;
+    --cor1: #fff880;
+    --cor2: #0000FF;
+    --cor3: #8080ff;
 }
 
 * {
@@ -27,133 +17,30 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
-    background-color: var(--cor0);
-    color: var(--cor2);
-    display: flex;
-    align-items: center;
-    height: 80px;
+@font-face {
+    font-family: 'Odd-Modern';
+    src:url('Odd-Modern.ttf.woff') format('woff'),
+        url('Odd-Modern.ttf.svg#Odd-Modern') format('svg'),
+        url('Odd-Modern.ttf.eot'),
+        url('Odd-Modern.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
 }
 
-.header h2 {
-    font-size: 2em;
-}
+/*
 
-.nav, .nav a {
-    background-color: var(--cor0);
-    color: var(--cor2);
-    height: 25px;
-}
+    || Miadia query
 
-.nav ul,a {
-    text-decoration: none;
-    list-style: none;
-
-}
-
-.nav ul{
-    display: flex;
-    justify-content: end;
-}
-
-.nav ul li a{
-    font-size: 1.2em;
-    padding: 8px;
-    border-radius: 50px;
-    transition: .5s;
-}
-
-.nav ul li a:hover {
-    background-color: var(--cor3);
-    color: white;
-    text-decoration: underline;
-}
-main {
-    background-color: var(--cor3);
-}
-.cabecalho {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-div#img-0 {
-    background-image: url(/img/Copa_do_mundo_Catar_Reproducao-Fifa.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.noticia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-section.noticia p {
-    font-size: 1.3em;
-}
-
-div.imagem {
-    background-color: black;
-    height: 50vh;
-    width: 90vw;
-    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.685);
-   
-}
-
-section div#img-1 {
-    background-image: url(../img/uruguai-primeira-copa.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section div#img-2 { 
-    background-image: url(../img/Eurico-Gaspar-Dutra.jpg.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section div#img-3 {
-    background-image: url(../img/3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-section div#img-4 {
-    background-image: url(../img/4.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-
-}
-
-section div#img-5 {
-    background-image: url(../img/3-sao-luis_futebol-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section.top{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-section.top h2{
-    font-size: 2em;
-    padding: 10px;
-}
-
-section.top p {
-    font-size: 1.3em;
-    padding: 10px;
-}
+*/
 
 @media (min-width: 301px) and (max-width: 800px){
+    
+    /*
+
+        || Header
+
+    */
+    
     .header {
         background-color: var(--cor0);
         color: var(--cor2);
@@ -167,6 +54,12 @@ section.top p {
         justify-content: center;
     }
     
+    /*
+
+        || Main
+
+    */
+
     main {
         background-color: var(--cor3);
         padding: 30px;
@@ -231,6 +124,7 @@ section.top p {
     section.top p {
         font-size: .9em;
         }
+    
     div.imagem {
         background-color: black;
         height: 300px;
@@ -239,8 +133,15 @@ section.top p {
            
     }
 }
+
 @media (min-width: 200px) and (max-width: 300px){
     
+    /*
+
+        || Header
+
+    */
+
     .header {
         background-color: var(--cor0);
         color: var(--cor2);
@@ -267,6 +168,12 @@ section.top p {
         font-size: .3em;
         padding: 2px;
     }
+
+    /*
+
+        || Main
+
+    */
     
     main {
         background-color: var(--cor3);
@@ -297,17 +204,19 @@ section.top p {
         min-height: 15%;
         min-width: 10%;
     }
+
     section.noticia {
         display: flex;
         flex-direction: column;
         align-items: center;
-       }
+    }
     
     section.noticia p{
         text-align: center;
         font-size: .7em;
         margin: 10px;
     }
+
     section.noticia img {
             height: 30%;
             width: 40%;
@@ -343,3 +252,151 @@ section.top p {
     }
         
 }
+
+/*
+
+    || Header
+
+*/
+
+.header {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header h2 {
+    font-size: 2em;
+}
+
+.nav, .nav a {
+    background-color: var(--cor0);
+    color: var(--cor2);
+    height: 25px;
+}
+
+.nav ul,a {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.nav ul{
+    display: flex;
+    justify-content: end;
+}
+
+.nav ul li a{
+    font-size: 1.2em;
+    padding: 8px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.nav ul li a:hover {
+    background-color: var(--cor3);
+    color: white;
+    text-decoration: underline;
+}
+
+/*
+
+    || Main
+
+*/
+
+main {
+    background-color: var(--cor3);
+}
+
+.cabecalho {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#img-0 {
+    background-image: url(../img/Copa_do_mundo_Catar_Reproducao-Fifa.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.noticia p {
+    font-size: 1.3em;
+}
+
+div.imagem {
+    background-color: black;
+    height: 50vh;
+    width: 90vw;
+    box-shadow: inset 6px 6px 13px 0 rgba(0, 0, 0, 0.685);
+   
+}
+
+section div#img-1 {
+    background-image: url(../img/uruguai-primeira-copa.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section div#img-2 { 
+    background-image: url(../img/Eurico-Gaspar-Dutra.jpg.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section div#img-3 {
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section div#img-4 {
+    background-image: url(../img/4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section div#img-5 {
+    background-image: url(../img/3-sao-luis_futebol-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section.top h2{
+    font-size: 2em;
+    padding: 10px;
+}
+
+section.top p {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+/*
+
+    || Footer
+
+*/

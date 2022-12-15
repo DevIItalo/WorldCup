@@ -102,20 +102,20 @@ div.imagem {
 }
 
 section div#img-1 {
-    background-image: url(//img/uruguai-primeira-copa.jpg);
+    background-image: url(../img/uruguai-primeira-copa.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
 section div#img-2 { 
-    background-image: url(//img/Eurico-Gaspar-Dutra.jpg.png);
+    background-image: url(../img/Eurico-Gaspar-Dutra.jpg.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 section div#img-3 {
-    background-image: url(//img/3.jpg);
+    background-image: url(../img/3.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -123,14 +123,14 @@ section div#img-3 {
 }
 
 section div#img-4 {
-    background-image: url(//img/4.jpg);
+    background-image: url(../img/4.jpg);
     background-size: cover;
     background-attachment: fixed;
 
 }
 
 section div#img-5 {
-    background-image: url(//img/3-sao-luis_futebol-1.jpg);
+    background-image: url(../img/3-sao-luis_futebol-1.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

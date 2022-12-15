@@ -147,7 +147,6 @@ body {
         color: var(--cor2);
         display: flex;
         justify-content: center;
-       
     }
     
     .header h2 {
@@ -271,6 +270,10 @@ body {
     font-size: 2em;
 }
 
+nav.nav {
+    box-shadow: 1px 8px 3px 3px rgba(0, 0, 0, 0.507);
+}
+
 .nav, .nav a {
     background-color: var(--cor0);
     color: var(--cor2);
@@ -312,10 +315,10 @@ main {
 }
 
 .cabecalho {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3px;
 }
 
 div#img-0 {
